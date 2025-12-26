@@ -24,12 +24,12 @@
     size: Small
   - type: Tool
     qualities:
-      - Slicing
+      Slicing: 1
     useSound:
       path: /Audio/Items/Culinary/chop.ogg
 
 - type: entity
-  parent: BaseKnife
+  parent: [BaseKnife, BaseTool]
   id: KitchenKnife
   name: kitchen knife
   description: A general purpose Chef's Knife made by Asters Merchant Guild. Guaranteed to stay sharp for years to come..
@@ -66,7 +66,7 @@
 
 - type: entity
   name: butcher's cleaver
-  parent: BaseKnife
+  parent: [BaseKnife, BaseTool]
   id: ButchCleaver
   description: A huge blade used for chopping and chopping up meat. This includes clowns and clown-by-products.
   components:
@@ -107,7 +107,7 @@
 
 - type: entity
   name: combat knife
-  parent: [BaseKnife, BaseSecurityContraband]
+  parent: [BaseKnife, BaseSecurityContraband, BaseTool]
   id: CombatKnife
   description: A deadly knife intended for melee confrontations.
   components:
@@ -268,6 +268,34 @@
         - ItemMask
         restitution: 0.3
         friction: 0.2
+  #Space Prototype chages start
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassCrack
+    - trigger:
+        !type:DamageTrigger
+        damage: 10
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Tool
+    qualities:
+      Slicing: 0.2
+    damagePerUse:
+      types:
+        Blunt: 1
+  #Space Prototype chages end
 
 - type: entity
   name: reinforced shiv
@@ -287,6 +315,27 @@
     sprite: Objects/Weapons/Melee/reinforced_shiv.rsi
   - type: Sprite
     sprite: Objects/Weapons/Melee/reinforced_shiv.rsi
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 15
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassCrack
+    - trigger:
+        !type:DamageTrigger
+        damage: 25
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Tool
+    qualities:
+      Slicing: 0.3
 
 - type: entity
   name: plasma shiv
@@ -306,6 +355,27 @@
     sprite: Objects/Weapons/Melee/plasma_shiv.rsi
   - type: Sprite
     sprite: Objects/Weapons/Melee/plasma_shiv.rsi
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 20
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassCrack
+    - trigger:
+        !type:DamageTrigger
+        damage: 40
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Tool
+    qualities:
+      Slicing: 0.35
 
 - type: entity
   name: uranium shiv
@@ -326,6 +396,27 @@
     sprite: Objects/Weapons/Melee/uranium_shiv.rsi
   - type: Sprite
     sprite: Objects/Weapons/Melee/uranium_shiv.rsi
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 20
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassCrack
+    - trigger:
+        !type:DamageTrigger
+        damage: 40
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Tool
+    qualities:
+      Slicing: 0.35
 
 - type: entity
   name: throwing knife
@@ -395,9 +486,12 @@
       - Knife
     - type: Tool
       qualities:
-      - Slicing
+        Slicing: 0.2
       useSound:
         path: /Audio/Items/Culinary/chop.ogg
+      damagePerUse:
+        types:
+          Blunt: 1
   - type: Item
     size: Tiny
     sprite: Objects/Weapons/Melee/utility_knife.rsi
@@ -441,3 +535,21 @@
       - state: inhand-right-blade
   - type: UseDelay
     delay: 0.2
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 15
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassCrack
+    - trigger:
+        !type:DamageTrigger
+        damage: 30
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]

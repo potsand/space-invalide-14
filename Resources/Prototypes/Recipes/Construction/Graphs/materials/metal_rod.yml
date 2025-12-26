@@ -17,6 +17,7 @@
       steps:
       - tool: Slicing
         doAfter: 4
+        qualityLevel: 0.3
 
   - node: MetalRod
     entity: PartRodMetal3
