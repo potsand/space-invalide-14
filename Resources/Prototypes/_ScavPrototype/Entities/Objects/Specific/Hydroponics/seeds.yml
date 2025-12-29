@@ -1,6 +1,6 @@
 - type: entity
   parent: SeedBase
-  name: packet of geo tree spores
+  name: пакет семян гео дерева
   id: GeoTreeSeeds
   components:
     - type: Seed

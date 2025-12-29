@@ -1,9 +1,9 @@
 # Copied & Redacted from seeds.yml(original), if something broken - not my fault :)
 - type: seed
   id: geoTreeSeed
-  name: geo tree seed
-  noun: geo tree spore
-  displayName: geo tree
+  name: семена гео дерева
+  noun: семена гео дерева
+  displayName: гео дерево
   plantRsi: _ScavPrototype/Objects/Specific/Hydroponics/geo_tree.rsi
   packetPrototype: GeoTreeSeeds
   productPrototypes:
