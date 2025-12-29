@@ -24,7 +24,7 @@
 
 # From Aloe
 - type: seed
-  id: glowTreeSeeds
+  id: glowTreeSeed
   name: семена светящегося дерева
   noun: семена светящегося дерева
   displayName: светящееся дерево
