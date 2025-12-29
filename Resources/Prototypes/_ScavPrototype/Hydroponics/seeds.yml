@@ -2,7 +2,7 @@
 - type: seed
   id: geoTreeSeed
   name: geo tree seed
-  noun: seeds-noun-spores
+  noun: geo tree spore
   displayName: geo tree
   plantRsi: _ScavPrototype/Objects/Specific/Hydroponics/geo_tree.rsi
   packetPrototype: TowercapSeeds
