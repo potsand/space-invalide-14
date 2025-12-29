@@ -1,6 +1,6 @@
 # Copied & Redacted from seeds.yml(original), if something broken - not my fault :)
 - type: seed
-  id: geoTree
+  id: geoTreeSeed
   name: geo tree seed
   noun: seeds-noun-spores
   displayName: geo tree
