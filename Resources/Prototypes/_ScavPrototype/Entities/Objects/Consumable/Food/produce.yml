@@ -34,7 +34,7 @@
     tags:
     - GlowPlantFruit
   - type: Produce
-    seedId: glowTreeSeeds
+    seedId: glowTreeSeed
 
 - type: entity
   name: гео фрукт
@@ -72,4 +72,4 @@
     - Fruit
     - Vegetable
   - type: Produce
-    seedId: geoTreeSeeds
+    seedId: geoTreeSeed
