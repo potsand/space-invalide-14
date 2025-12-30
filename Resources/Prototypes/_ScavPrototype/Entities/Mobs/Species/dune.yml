@@ -90,13 +90,13 @@
     baseCritThreshold: 120
     decay: 4
   - type: Hunger
-    baseDecayRate: 0.033
+    baseDecayRate: 0.047
     starvationDamage:
       types:
         Bloodloss: 0.7
         Cold: 0.05
   - type: Thirst
-    baseDecayRate: 0.17
+    baseDecayRate: 0.22
   - type: Tag
     tags:
     - FootstepSound

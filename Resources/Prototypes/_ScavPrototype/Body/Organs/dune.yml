@@ -14,7 +14,7 @@
         - ReagentId: YellowBlood
           Quantity: 5
   - type: Metabolizer
-    maxReagents: 3
+    maxReagents: 4
     metabolizerTypes: [ Animal, Speciman, Dune ]
     groups:
     - id: Food
