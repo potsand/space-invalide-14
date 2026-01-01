@@ -4,8 +4,8 @@ meta:
   engineVersion: 268.0.0
   forkId: ""
   forkVersion: ""
-  time: 12/28/2025 06:11:54
-  entityCount: 29556
+  time: 01/01/2026 05:06:02
+  entityCount: 29598
 maps:
 - 4917
 grids:
@@ -2844,7 +2844,6 @@ entities:
             436: -60,13
             548: 54,9
             556: 43,9
-            557: 36,-4
             578: 93,9
             1950: -7,-13
             3253: -64,61
@@ -3033,6 +3032,7 @@ entities:
             4033: -71,-7
             4117: 48,29
             4118: 48,25
+            4566: -2,15
         - node:
             color: '#52B4E9FF'
             id: WarnLineGreyscaleE
@@ -3250,6 +3250,14 @@ entities:
             3231: -59,63
             3829: 18,0
             4122: 74,8
+            4584: 47,15
+            4585: 47,14
+            4586: 47,13
+        - node:
+            color: '#FF9821FF'
+            id: WarnLineGreyscaleE
+          decals:
+            4567: -2,15
         - node:
             color: '#FFA647FF'
             id: WarnLineGreyscaleE
@@ -3847,6 +3855,11 @@ entities:
             3825: 17,1
             3826: 16,1
         - node:
+            color: '#FF9821FF'
+            id: WarnLineGreyscaleN
+          decals:
+            4564: -14,11
+        - node:
             color: '#FFA647FF'
             id: WarnLineGreyscaleN
           decals:
@@ -3891,7 +3904,6 @@ entities:
             4029: -45,11
             4037: -56,-6
             4045: -15,-45
-            4490: -14,11
         - node:
             color: '#FFFFFFFF'
             id: WarnLineGreyscaleN
@@ -4517,6 +4529,16 @@ entities:
             4124: 73,8
             4125: 74,8
         - node:
+            color: '#FF9821FF'
+            id: WarnLineGreyscaleS
+          decals:
+            4571: 11,-44
+            4572: 16,-44
+            4573: 29,-44
+            4575: 5,-40
+            4577: -32,-13
+            4579: -69,-13
+        - node:
             color: '#FFA647FF'
             id: WarnLineGreyscaleS
           decals:
@@ -4869,11 +4891,15 @@ entities:
             3821: 22,4
             3822: 22,3
             4121: 72,8
+            4582: 46,13
+            4583: 46,15
         - node:
             color: '#FF9821FF'
             id: WarnLineGreyscaleW
           decals:
             4051: -10,-24
+            4565: -11,14
+            4581: -29,-8
         - node:
             color: '#FFA647FF'
             id: WarnLineGreyscaleW
@@ -5054,6 +5080,12 @@ entities:
             4405: -43,0
             4434: -41,0
             4530: -49,2
+            4568: 11,-44
+            4569: 16,-44
+            4570: 29,-44
+            4574: 5,-40
+            4576: -32,-13
+            4578: -69,-13
         - node:
             angle: 6.283185307179586 rad
             color: '#FFFFFFFF'
@@ -5162,6 +5194,8 @@ entities:
             4246: -81,45
             4247: -81,46
             4248: -81,43
+            4561: -11,14
+            4580: -29,-8
         - node:
             angle: 6.283185307179586 rad
             color: '#FFFFFFFF'
@@ -5303,10 +5337,10 @@ entities:
             4412: -44,-12
             4413: -43,-12
             4414: -44,-12
-            4489: -14,11
             4534: -57,-12
             4535: -56,-12
             4538: -54,-6
+            4563: -14,11
         - node:
             angle: 7.853981633974483 rad
             color: '#E5C000FF'
@@ -6579,7 +6613,8 @@ entities:
           -12,11:
             0: 65520
           -12,6:
-            0: 61166
+            0: 59118
+            8: 2048
           -12,7:
             0: 61166
           -11,7:
@@ -6819,7 +6854,8 @@ entities:
           6,5:
             0: 65535
           6,6:
-            0: 3855
+            0: 3851
+            3: 4
           6,7:
             0: 65535
           6,8:
@@ -6827,7 +6863,8 @@ entities:
           7,5:
             0: 65535
           7,6:
-            3: 9
+            9: 1
+            3: 8
             0: 3846
           7,7:
             0: 65535
@@ -7494,7 +7531,7 @@ entities:
           -5,-10:
             0: 15
             7: 34816
-            8: 8704
+            10: 8704
           -3,-12:
             0: 65399
           -3,-11:
@@ -7545,7 +7582,7 @@ entities:
             0: 12272
           -6,-10:
             0: 12846
-            9: 34816
+            11: 34816
           -6,-13:
             0: 65535
           -5,-13:
@@ -8243,6 +8280,16 @@ entities:
         - volume: 2500
           immutable: True
           moles: {}
+        - volume: 2500
+          temperature: 293.14975
+          moles:
+            Oxygen: 21.824879
+            Nitrogen: 82.10312
+        - volume: 2500
+          temperature: 293.14948
+          moles:
+            Oxygen: 18.472576
+            Nitrogen: 69.49208
         - volume: 2500
           temperature: 293.15
           moles:
@@ -10879,7 +10926,7 @@ entities:
       pos: -14.5,-38.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -234598.8
+      secondsUntilStateChange: -239784.75
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -11195,24 +11242,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 61.5,-25.5
       parent: 2
-  - uid: 23730
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 57.5,12.5
-      parent: 2
-  - uid: 23731
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 58.5,12.5
-      parent: 2
-  - uid: 23732
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 59.5,12.5
-      parent: 2
 - proto: AirlockGlassShuttle
   entities:
   - uid: 6259
@@ -11263,7 +11292,7 @@ entities:
       pos: -5.5,-2.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -87313.95
+      secondsUntilStateChange: -92499.92
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -11284,7 +11313,7 @@ entities:
       pos: -35.5,3.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -259952.44
+      secondsUntilStateChange: -265138.4
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -11302,7 +11331,7 @@ entities:
       pos: -32.5,-3.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -259947.84
+      secondsUntilStateChange: -265133.8
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -11463,7 +11492,7 @@ entities:
       pos: -27.5,-15.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -242042.97
+      secondsUntilStateChange: -247228.92
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -11562,7 +11591,7 @@ entities:
       pos: 5.5,-40.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -201963.77
+      secondsUntilStateChange: -207149.72
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -12128,6 +12157,11 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 10.5,-18.5
       parent: 2
+  - uid: 23732
+    components:
+    - type: Transform
+      pos: -29.5,-7.5
+      parent: 2
 - proto: AirlockMaintSecLocked
   entities:
   - uid: 4977
@@ -12144,7 +12178,7 @@ entities:
     - type: AccessReader
       accessListsOriginal: []
     - type: Door
-      secondsUntilStateChange: -210367.77
+      secondsUntilStateChange: -215553.72
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -12495,6 +12529,11 @@ entities:
     - type: Transform
       pos: 22.5,-8.5
       parent: 2
+  - uid: 94
+    components:
+    - type: Transform
+      pos: 57.5,12.5
+      parent: 2
   - uid: 131
     components:
     - type: Transform
@@ -12799,6 +12838,16 @@ entities:
       rot: 3.141592653589793 rad
       pos: -35.5,11.5
       parent: 2
+  - uid: 23730
+    components:
+    - type: Transform
+      pos: 58.5,12.5
+      parent: 2
+  - uid: 23731
+    components:
+    - type: Transform
+      pos: 59.5,12.5
+      parent: 2
   - uid: 23863
     components:
     - type: Transform
@@ -12926,11 +12975,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -27.5,-5.5
       parent: 2
-  - uid: 94
-    components:
-    - type: Transform
-      pos: -29.5,-7.5
-      parent: 2
   - uid: 95
     components:
     - type: Transform
@@ -13005,7 +13049,7 @@ entities:
       pos: 50.5,-7.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -207436.34
+      secondsUntilStateChange: -212622.3
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -13515,7 +13559,7 @@ entities:
       pos: 25.5,16.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -26435.078
+      secondsUntilStateChange: -31621.041
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -13595,7 +13639,7 @@ entities:
       pos: 16.5,-41.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -206034.94
+      secondsUntilStateChange: -211220.89
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -68346,11 +68390,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 29.5,21.5
       parent: 2
-  - uid: 28396
-    components:
-    - type: Transform
-      pos: 28.5,24.5
-      parent: 2
   - uid: 28430
     components:
     - type: Transform
@@ -68435,14 +68474,12 @@ entities:
   - uid: 28361
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 28.46243,16.368866
+      pos: 28.43686,16.564604
       parent: 2
   - uid: 28371
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 28.415554,16.181366
+      pos: 28.478527,16.647936
       parent: 2
   - uid: 28376
     components:
@@ -70596,6 +70633,16 @@ entities:
     - type: Transform
       pos: 53.10774,20.609598
       parent: 2
+  - uid: 29587
+    components:
+    - type: Transform
+      pos: 53.051666,20.66123
+      parent: 2
+  - uid: 29588
+    components:
+    - type: Transform
+      pos: 52.957916,20.577896
+      parent: 2
 - proto: ClothingEyesGlasses
   entities:
   - uid: 1692
@@ -72079,33 +72126,33 @@ entities:
           ents:
           - 28287
           - 28286
-          - 28285
-          - 28284
-          - 28283
-          - 28282
-          - 28281
-          - 28280
-          - 28262
-          - 28261
-          - 28260
-          - 28259
-          - 28258
-          - 28263
-          - 28264
-          - 28265
-          - 28266
-          - 28267
-          - 28268
-          - 28269
-          - 28270
-          - 28271
-          - 28272
-          - 28273
-          - 28274
-          - 28275
-          - 28276
-          - 28277
           - 28278
+          - 28277
+          - 28276
+          - 28275
+          - 28274
+          - 28273
+          - 28272
+          - 28271
+          - 28270
+          - 28269
+          - 28268
+          - 28267
+          - 28266
+          - 28265
+          - 28264
+          - 28263
+          - 28258
+          - 28259
+          - 28260
+          - 28261
+          - 28262
+          - 28280
+          - 28281
+          - 28282
+          - 28283
+          - 28284
+          - 28285
           - 28279
         paper_label: !type:ContainerSlot
           showEnts: False
@@ -72132,8 +72179,8 @@ entities:
           showEnts: False
           occludes: True
           ents:
+          - 28318
           - 28289
-          - 28290
           - 28291
           - 28292
           - 28293
@@ -72161,7 +72208,7 @@ entities:
           - 28315
           - 28316
           - 28317
-          - 28318
+          - 28290
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -72797,6 +72844,32 @@ entities:
     - type: Transform
       pos: -44.5,26.5
       parent: 2
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.4,-0.4
+            - 0.4,-0.4
+            - 0.4,0.29
+            - -0.4,0.29
+          mask:
+          - Impassable
+          - HighImpassable
+          - LowImpassable
+          layer:
+          - BulletImpassable
+          - Opaque
+          density: 50
+          hard: True
+          restitution: 0
+          friction: 0.4
+    - type: EntityStorage
+      removedMasks: 20
+      open: True
+    - type: PlaceableSurface
+      isPlaceable: True
 - proto: CrateHydroponicsSeedsExotic
   entities:
   - uid: 18912
@@ -72941,6 +73014,59 @@ entities:
           - 26925
           - 26924
           - 26922
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+  - uid: 28396
+    components:
+    - type: Transform
+      pos: 28.5,24.5
+      parent: 2
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.1462
+        moles:
+          Oxygen: 1.606311
+          Nitrogen: 6.042789
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 29314
+          - 29557
+          - 29558
+          - 29559
+          - 29560
+          - 29561
+          - 29562
+          - 29563
+          - 29564
+          - 29565
+          - 29566
+          - 29567
+          - 29568
+          - 29569
+          - 29570
+          - 29571
+          - 29572
+          - 29573
+          - 29574
+          - 29575
+          - 29576
+          - 29577
+          - 29578
+          - 29579
+          - 29580
+          - 29581
+          - 29582
+          - 29583
+          - 29584
+          - 29585
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -82128,6 +82254,46 @@ entities:
     - type: Transform
       pos: 32.680702,21.391129
       parent: 2
+  - uid: 29569
+    components:
+    - type: Transform
+      parent: 28396
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+      storage: 28396
+  - uid: 29570
+    components:
+    - type: Transform
+      parent: 28396
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+      storage: 28396
+  - uid: 29571
+    components:
+    - type: Transform
+      parent: 28396
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+      storage: 28396
+  - uid: 29572
+    components:
+    - type: Transform
+      parent: 28396
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+      storage: 28396
+  - uid: 29573
+    components:
+    - type: Transform
+      parent: 28396
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+      storage: 28396
 - proto: DrinkGrapeCan
   entities:
   - uid: 16418
@@ -82326,6 +82492,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28387
   - uid: 28389
     components:
     - type: Transform
@@ -82333,6 +82500,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28387
   - uid: 28390
     components:
     - type: Transform
@@ -82340,6 +82508,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28387
   - uid: 28392
     components:
     - type: Transform
@@ -82347,6 +82516,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28387
   - uid: 28393
     components:
     - type: Transform
@@ -82354,6 +82524,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28387
 - proto: DrinkMug
   entities:
   - uid: 6962
@@ -84238,6 +84409,126 @@ entities:
     - type: Transform
       pos: 31.06712,20.73511
       parent: 2
+  - uid: 29566
+    components:
+    - type: Transform
+      parent: 28396
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+      storage: 28396
+  - uid: 29567
+    components:
+    - type: Transform
+      parent: 28396
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+      storage: 28396
+  - uid: 29568
+    components:
+    - type: Transform
+      parent: 28396
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+      storage: 28396
+  - uid: 29574
+    components:
+    - type: Transform
+      parent: 28396
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+      storage: 28396
+  - uid: 29575
+    components:
+    - type: Transform
+      parent: 28396
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+      storage: 28396
+  - uid: 29576
+    components:
+    - type: Transform
+      parent: 28396
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+      storage: 28396
+  - uid: 29577
+    components:
+    - type: Transform
+      parent: 28396
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+      storage: 28396
+  - uid: 29578
+    components:
+    - type: Transform
+      parent: 28396
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+      storage: 28396
+  - uid: 29579
+    components:
+    - type: Transform
+      parent: 28396
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+      storage: 28396
+  - uid: 29580
+    components:
+    - type: Transform
+      parent: 28396
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+      storage: 28396
+  - uid: 29581
+    components:
+    - type: Transform
+      parent: 28396
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+      storage: 28396
+  - uid: 29582
+    components:
+    - type: Transform
+      parent: 28396
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+      storage: 28396
+  - uid: 29583
+    components:
+    - type: Transform
+      parent: 28396
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+      storage: 28396
+  - uid: 29584
+    components:
+    - type: Transform
+      parent: 28396
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+      storage: 28396
+  - uid: 29585
+    components:
+    - type: Transform
+      parent: 28396
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+      storage: 28396
 - proto: FoodBoxCloth
   entities:
   - uid: 6523
@@ -84500,6 +84791,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28288
   - uid: 28309
     components:
     - type: Transform
@@ -84507,6 +84799,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28288
   - uid: 28310
     components:
     - type: Transform
@@ -84514,6 +84807,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28288
   - uid: 28311
     components:
     - type: Transform
@@ -84521,6 +84815,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28288
   - uid: 28312
     components:
     - type: Transform
@@ -84528,6 +84823,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28288
   - uid: 28313
     components:
     - type: Transform
@@ -84535,6 +84831,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28288
   - uid: 28314
     components:
     - type: Transform
@@ -84542,6 +84839,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28288
   - uid: 28315
     components:
     - type: Transform
@@ -84549,6 +84847,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28288
   - uid: 28316
     components:
     - type: Transform
@@ -84556,6 +84855,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28288
   - uid: 28317
     components:
     - type: Transform
@@ -84563,6 +84863,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28288
 - proto: FoodCheese
   entities:
   - uid: 8209
@@ -84666,6 +84967,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28257
   - uid: 28276
     components:
     - type: Transform
@@ -84673,6 +84975,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28257
   - uid: 28279
     components:
     - type: Transform
@@ -84680,6 +84983,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28257
   - uid: 28282
     components:
     - type: Transform
@@ -84687,6 +84991,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28257
   - uid: 28284
     components:
     - type: Transform
@@ -84694,6 +84999,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28257
 - proto: FoodCondimentBottleEnzyme
   entities:
   - uid: 8168
@@ -84757,6 +85063,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28387
   - uid: 28394
     components:
     - type: Transform
@@ -84764,6 +85071,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28387
 - proto: FoodDonutApple
   entities:
   - uid: 5922
@@ -84984,6 +85292,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28257
   - uid: 28259
     components:
     - type: Transform
@@ -84991,6 +85300,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28257
   - uid: 28260
     components:
     - type: Transform
@@ -84998,6 +85308,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28257
   - uid: 28261
     components:
     - type: Transform
@@ -85005,6 +85316,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28257
   - uid: 28262
     components:
     - type: Transform
@@ -85012,6 +85324,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28257
   - uid: 28263
     components:
     - type: Transform
@@ -85019,6 +85332,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28257
   - uid: 28264
     components:
     - type: Transform
@@ -85026,6 +85340,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28257
   - uid: 28265
     components:
     - type: Transform
@@ -85033,6 +85348,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28257
   - uid: 28280
     components:
     - type: Transform
@@ -85040,6 +85356,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28257
   - uid: 28281
     components:
     - type: Transform
@@ -85047,6 +85364,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28257
 - proto: FoodMeatBacon
   entities:
   - uid: 8095
@@ -85091,6 +85409,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28257
   - uid: 28278
     components:
     - type: Transform
@@ -85098,6 +85417,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28257
   - uid: 28285
     components:
     - type: Transform
@@ -85105,6 +85425,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28257
   - uid: 28286
     components:
     - type: Transform
@@ -85112,6 +85433,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28257
   - uid: 28287
     components:
     - type: Transform
@@ -85119,6 +85441,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28257
 - proto: FoodMeatChicken
   entities:
   - uid: 8078
@@ -85425,6 +85748,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28257
   - uid: 28269
     components:
     - type: Transform
@@ -85432,6 +85756,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28257
   - uid: 28271
     components:
     - type: Transform
@@ -85439,6 +85764,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28257
   - uid: 28273
     components:
     - type: Transform
@@ -85446,6 +85772,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28257
   - uid: 28274
     components:
     - type: Transform
@@ -85453,6 +85780,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28257
 - proto: FoodOnionRed
   entities:
   - uid: 8220
@@ -85497,6 +85825,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28257
   - uid: 28268
     components:
     - type: Transform
@@ -85504,6 +85833,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28257
   - uid: 28270
     components:
     - type: Transform
@@ -85511,6 +85841,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28257
   - uid: 28272
     components:
     - type: Transform
@@ -85518,6 +85849,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28257
   - uid: 28283
     components:
     - type: Transform
@@ -85525,6 +85857,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28257
 - proto: FoodOnionRings
   entities:
   - uid: 6486
@@ -85588,6 +85921,46 @@ entities:
     - type: Transform
       pos: 31.934206,15.265321
       parent: 2
+  - uid: 29561
+    components:
+    - type: Transform
+      parent: 28396
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+      storage: 28396
+  - uid: 29562
+    components:
+    - type: Transform
+      parent: 28396
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+      storage: 28396
+  - uid: 29563
+    components:
+    - type: Transform
+      parent: 28396
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+      storage: 28396
+  - uid: 29564
+    components:
+    - type: Transform
+      parent: 28396
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+      storage: 28396
+  - uid: 29565
+    components:
+    - type: Transform
+      parent: 28396
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+      storage: 28396
 - proto: FoodPlateSmall
   entities:
   - uid: 8166
@@ -85625,6 +85998,46 @@ entities:
     - type: Transform
       pos: 33.13733,14.702821
       parent: 2
+  - uid: 29314
+    components:
+    - type: Transform
+      parent: 28396
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+      storage: 28396
+  - uid: 29557
+    components:
+    - type: Transform
+      parent: 28396
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+      storage: 28396
+  - uid: 29558
+    components:
+    - type: Transform
+      parent: 28396
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+      storage: 28396
+  - uid: 29559
+    components:
+    - type: Transform
+      parent: 28396
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+      storage: 28396
+  - uid: 29560
+    components:
+    - type: Transform
+      parent: 28396
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+      storage: 28396
 - proto: FoodPlateSmallPlastic
   entities:
   - uid: 13310
@@ -85783,6 +86196,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28288
   - uid: 28300
     components:
     - type: Transform
@@ -85790,6 +86204,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28288
   - uid: 28301
     components:
     - type: Transform
@@ -85797,6 +86212,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28288
   - uid: 28302
     components:
     - type: Transform
@@ -85804,6 +86220,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28288
   - uid: 28303
     components:
     - type: Transform
@@ -85811,6 +86228,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28288
   - uid: 28304
     components:
     - type: Transform
@@ -85818,6 +86236,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28288
   - uid: 28305
     components:
     - type: Transform
@@ -85825,6 +86244,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28288
   - uid: 28306
     components:
     - type: Transform
@@ -85832,6 +86252,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28288
   - uid: 28307
     components:
     - type: Transform
@@ -85839,6 +86260,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28288
   - uid: 28308
     components:
     - type: Transform
@@ -85846,6 +86268,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28288
 - proto: FoodSaladCaesar
   entities:
   - uid: 26129
@@ -87116,6 +87539,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28288
   - uid: 28291
     components:
     - type: Transform
@@ -87123,6 +87547,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28288
   - uid: 28292
     components:
     - type: Transform
@@ -87130,6 +87555,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28288
   - uid: 28293
     components:
     - type: Transform
@@ -87137,6 +87563,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28288
   - uid: 28294
     components:
     - type: Transform
@@ -87144,6 +87571,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28288
   - uid: 28295
     components:
     - type: Transform
@@ -87151,6 +87579,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28288
   - uid: 28296
     components:
     - type: Transform
@@ -87158,6 +87587,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28288
   - uid: 28297
     components:
     - type: Transform
@@ -87165,6 +87595,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28288
   - uid: 28298
     components:
     - type: Transform
@@ -87172,6 +87603,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28288
   - uid: 28318
     components:
     - type: Transform
@@ -87179,6 +87611,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 28288
 - proto: FoodYellowMeat
   entities:
   - uid: 24114
@@ -130581,7 +131014,7 @@ entities:
       pos: 60.5,-36.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -134973.52
+      secondsUntilStateChange: -140159.47
       state: Opening
   - uid: 18542
     components:
@@ -130590,7 +131023,7 @@ entities:
       pos: 59.5,-36.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -134973.25
+      secondsUntilStateChange: -140159.2
       state: Opening
   - uid: 18544
     components:
@@ -133094,13 +133527,13 @@ entities:
           showEnts: False
           occludes: True
           ents:
+          - 28394
           - 28392
-          - 28391
           - 28390
           - 28389
           - 28388
           - 28393
-          - 28394
+          - 28391
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -142485,11 +142918,6 @@ entities:
     - type: Transform
       pos: 21.5,24.5
       parent: 2
-  - uid: 29314
-    components:
-    - type: Transform
-      pos: 26.5,24.5
-      parent: 2
   - uid: 29315
     components:
     - type: Transform
@@ -142730,6 +143158,11 @@ entities:
     - type: Transform
       pos: -0.5,6.5
       parent: 26939
+  - uid: 29586
+    components:
+    - type: Transform
+      pos: 26.5,23.5
+      parent: 2
 - proto: RandomVendingDrinks
   entities:
   - uid: 5913
@@ -144519,6 +144952,16 @@ entities:
     components:
     - type: Transform
       pos: 53.685863,19.953348
+      parent: 2
+  - uid: 29589
+    components:
+    - type: Transform
+      pos: 53.47875,19.900812
+      parent: 2
+  - uid: 29590
+    components:
+    - type: Transform
+      pos: 53.28083,19.921646
       parent: 2
 - proto: RiceBushel
   entities:
@@ -146347,7 +146790,7 @@ entities:
       pos: 40.5,-3.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -185830.73
+      secondsUntilStateChange: -191016.69
       state: Closing
     - type: DeviceLinkSource
       lastSignals:
@@ -151130,6 +151573,93 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -1.5,1.5
       parent: 26939
+  - uid: 29591
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -96.5,36.5
+      parent: 2
+    - type: SurveillanceCamera
+      setupAvailableNetworks:
+      - SurveillanceCameraPhysicalTesting
+      nameSet: True
+      id: арена - 3
+  - uid: 29592
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -96.5,47.5
+      parent: 2
+    - type: SurveillanceCamera
+      setupAvailableNetworks:
+      - SurveillanceCameraPhysicalTesting
+      nameSet: True
+      id: арена - 4
+  - uid: 29593
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -82.5,47.5
+      parent: 2
+    - type: SurveillanceCamera
+      setupAvailableNetworks:
+      - SurveillanceCameraPhysicalTesting
+      nameSet: True
+      id: арена - 6
+  - uid: 29594
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -82.5,36.5
+      parent: 2
+    - type: SurveillanceCamera
+      setupAvailableNetworks:
+      - SurveillanceCameraPhysicalTesting
+      nameSet: True
+      id: арена - 1
+  - uid: 29595
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -78.5,43.5
+      parent: 2
+    - type: SurveillanceCamera
+      setupAvailableNetworks:
+      - SurveillanceCameraPhysicalTesting
+      nameSet: True
+      id: арена - наблюдение
+  - uid: 29596
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -78.5,35.5
+      parent: 2
+    - type: SurveillanceCamera
+      setupAvailableNetworks:
+      - SurveillanceCameraPhysicalTesting
+      nameSet: True
+      id: арена - ожидание
+  - uid: 29597
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -89.5,50.5
+      parent: 2
+    - type: SurveillanceCamera
+      setupAvailableNetworks:
+      - SurveillanceCameraPhysicalTesting
+      nameSet: True
+      id: арена - 5
+  - uid: 29598
+    components:
+    - type: Transform
+      pos: -89.5,33.5
+      parent: 2
+    - type: SurveillanceCamera
+      setupAvailableNetworks:
+      - SurveillanceCameraPhysicalTesting
+      nameSet: True
+      id: арена - 2
 - proto: SurveillanceCameraPsyhoTesting
   entities:
   - uid: 19138
@@ -187731,7 +188261,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -255547.08
+      secondsUntilStateChange: -260733.03
       state: Opening
     - type: Airlock
       autoClose: False
@@ -187968,7 +188498,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -21324.434
+      secondsUntilStateChange: -26510.396
       state: Opening
     - type: Airlock
       autoClose: False
