@@ -21,6 +21,15 @@
         - !type:AdjustReagent
           reagent: UncookedAnimalProteins
           amount: 0.1
+        - !type:EvenHealthChange
+          conditions:
+          - !type:MetabolizerTypeCondition
+            type: [ Dune ]
+          damage:
+            Burn: -0.75
+            Toxin: -0.3
+            Airloss: -0.4
+            Brute: -1
     Poison:
       effects:
       - !type:HealthChange

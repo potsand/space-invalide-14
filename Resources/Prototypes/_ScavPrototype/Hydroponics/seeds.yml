@@ -1,0 +1,50 @@
+# Copied & Redacted from seeds.yml(original), if something broken - not my fault :)
+- type: seed
+  id: geoTreeSeed
+  name: семена гео дерева
+  noun: семена гео дерева
+  displayName: гео дерево
+  plantRsi: _ScavPrototype/Objects/Specific/Hydroponics/geo_tree.rsi
+  packetPrototype: geoTreeSeeds
+  productPrototypes:
+    - Log
+    - GeoFruit
+    - Foilage
+  lifespan: 80
+  maturation: 15
+  ligneous: true
+  production: 3
+  yield: 8
+  potency: 1
+  growthStages: 3
+  waterConsumption: 0.60
+  nutrientConsumption: 0.50
+  lightTolerance: 6
+  idealHeat: 288
+
+# From Aloe
+- type: seed
+  id: glowTreeSeed
+  name: семена светящегося дерева
+  noun: семена светящегося дерева
+  displayName: светящееся дерево
+  plantRsi: _ScavPrototype/Objects/Specific/Hydroponics/glow_tree.rsi
+  packetPrototype: glowTreeSeeds
+  productPrototypes:
+    - GlowPlantFruit
+  lifespan: 25
+  maturation: 10
+  production: 3
+  yield: 3
+  potency: 10
+  growthStages: 5
+  waterConsumption: 0.60
+  chemicals:
+    Aloe:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 10
+    Dermaline:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 10
