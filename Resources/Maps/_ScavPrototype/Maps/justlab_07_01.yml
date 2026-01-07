@@ -4,8 +4,8 @@ meta:
   engineVersion: 268.0.0
   forkId: ""
   forkVersion: ""
-  time: 01/04/2026 11:49:49
-  entityCount: 29617
+  time: 01/07/2026 04:33:57
+  entityCount: 29625
 maps:
 - 4917
 grids:
@@ -8145,7 +8145,8 @@ entities:
           23,-4:
             0: 62717
           23,-3:
-            0: 30479
+            0: 29967
+            1: 512
           23,-2:
             0: 30471
           24,-3:
@@ -8599,6 +8600,26 @@ entities:
       container: 29601
       attachedEntity: 29601
   - uid: 2399
+    mapInit: true
+    paused: true
+    components:
+    - type: Transform
+      parent: 29603
+    - type: Action
+      originalIconColor: '#FFFFFFFF'
+      container: 29603
+      attachedEntity: 29603
+  - uid: 15204
+    mapInit: true
+    paused: true
+    components:
+    - type: Transform
+      parent: 29601
+    - type: Action
+      originalIconColor: '#FFFFFFFF'
+      container: 29601
+      attachedEntity: 29601
+  - uid: 24374
     mapInit: true
     paused: true
     components:
@@ -10156,11 +10177,6 @@ entities:
     - type: Transform
       pos: -46.5,36.5
       parent: 2
-  - uid: 24374
-    components:
-    - type: Transform
-      pos: -48.5,39.5
-      parent: 2
   - uid: 24376
     components:
     - type: Transform
@@ -10250,11 +10266,6 @@ entities:
     components:
     - type: Transform
       pos: -48.5,37.5
-      parent: 2
-  - uid: 24518
-    components:
-    - type: Transform
-      pos: -48.5,38.5
       parent: 2
   - uid: 24519
     components:
@@ -10968,7 +10979,7 @@ entities:
       pos: -14.5,-38.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -243139.81
+      secondsUntilStateChange: -243950.6
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -11334,7 +11345,7 @@ entities:
       pos: -5.5,-2.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -95854.984
+      secondsUntilStateChange: -96665.766
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -11355,7 +11366,7 @@ entities:
       pos: -35.5,3.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -268493.47
+      secondsUntilStateChange: -269304.25
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -11373,7 +11384,7 @@ entities:
       pos: -32.5,-3.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -268488.88
+      secondsUntilStateChange: -269299.66
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -11529,7 +11540,7 @@ entities:
       pos: -33.5,-10.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -544.1872
+      secondsUntilStateChange: -1354.966
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -11540,7 +11551,7 @@ entities:
       pos: -27.5,-15.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -250583.98
+      secondsUntilStateChange: -251394.77
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -11639,7 +11650,7 @@ entities:
       pos: 5.5,-40.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -210504.78
+      secondsUntilStateChange: -211315.56
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -12041,7 +12052,7 @@ entities:
       pos: -76.5,29.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -715.3537
+      secondsUntilStateChange: -1526.1324
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -12232,7 +12243,7 @@ entities:
     - type: AccessReader
       accessListsOriginal: []
     - type: Door
-      secondsUntilStateChange: -218908.78
+      secondsUntilStateChange: -219719.56
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -13103,7 +13114,7 @@ entities:
       pos: 50.5,-7.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -215977.36
+      secondsUntilStateChange: -216788.14
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -13613,7 +13624,7 @@ entities:
       pos: 25.5,16.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -34976.1
+      secondsUntilStateChange: -35786.88
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -13693,7 +13704,7 @@ entities:
       pos: 16.5,-41.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -214575.95
+      secondsUntilStateChange: -215386.73
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -62251,12 +62262,14 @@ entities:
           ents:
           - 29602
           - 1037
+          - 15204
         node-container: !type:Container
           ents: []
     - type: Actions
       actions:
       - 29602
       - 1037
+      - 15204
     missingComponents:
     - CartridgeAmmo
   - uid: 29603
@@ -62290,12 +62303,14 @@ entities:
           ents:
           - 29604
           - 2399
+          - 24374
         node-container: !type:Container
           ents: []
     - type: Actions
       actions:
       - 29604
       - 2399
+      - 24374
     missingComponents:
     - CartridgeAmmo
 - proto: CarbonDioxideCanister
@@ -72658,17 +72673,17 @@ entities:
         immutable: False
         temperature: 293.14673
         moles:
-          Oxygen: 1.7459903
-          Nitrogen: 6.568249
+          Oxygen: 1.8856695
+          Nitrogen: 7.0937095
     - type: ContainerContainer
       containers:
         entity_storage: !type:Container
           showEnts: False
           occludes: True
           ents:
-          - 22513
           - 22514
           - 22515
+          - 22513
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -84329,6 +84344,11 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -39.557404,43.102486
+      parent: 2
+  - uid: 24518
+    components:
+    - type: Transform
+      pos: -48.542606,38.54351
       parent: 2
 - proto: FloraTree
   entities:
@@ -131285,7 +131305,7 @@ entities:
       pos: 60.5,-36.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -143514.53
+      secondsUntilStateChange: -144325.31
       state: Opening
   - uid: 18542
     components:
@@ -131294,7 +131314,7 @@ entities:
       pos: 59.5,-36.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -143514.27
+      secondsUntilStateChange: -144325.05
       state: Opening
   - uid: 18544
     components:
@@ -131457,15 +131477,14 @@ entities:
   - uid: 13027
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -49.8537,32.41004
+      pos: -50.992367,31.46904
       parent: 2
 - proto: HydroponicsToolSpade
   entities:
   - uid: 13026
     components:
     - type: Transform
-      pos: -50.025574,32.56636
+      pos: -50.523617,31.37529
       parent: 2
 - proto: hydroponicsTray
   entities:
@@ -131488,6 +131507,13 @@ entities:
     components:
     - type: Transform
       pos: -42.5,26.5
+      parent: 2
+- proto: ImprovisedCrowbar
+  entities:
+  - uid: 29625
+    components:
+    - type: Transform
+      pos: -41.554226,43.580856
       parent: 2
 - proto: ImprovisedWirecutter
   entities:
@@ -137024,11 +137050,6 @@ entities:
     - type: Transform
       pos: 3.5,20.5
       parent: 2
-  - uid: 15204
-    components:
-    - type: Transform
-      pos: 11.5,-14.5
-      parent: 2
   - uid: 15205
     components:
     - type: Transform
@@ -137153,6 +137174,16 @@ entities:
     components:
     - type: Transform
       pos: 35.5,20.5
+      parent: 2
+  - uid: 29623
+    components:
+    - type: Transform
+      pos: 17.5,-20.5
+      parent: 2
+  - uid: 29624
+    components:
+    - type: Transform
+      pos: 18.5,-14.5
       parent: 2
 - proto: PottedPlantRD
   entities:
@@ -145927,6 +145958,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 22512
 - proto: SheetGlass1
   entities:
   - uid: 6072
@@ -145977,6 +146009,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 22512
 - proto: SheetSteel
   entities:
   - uid: 18446
@@ -145991,6 +146024,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+      storage: 22512
 - proto: SheetSteel1
   entities:
   - uid: 6070
@@ -147061,7 +147095,7 @@ entities:
       pos: 40.5,-3.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -194371.75
+      secondsUntilStateChange: -195182.53
       state: Closing
     - type: DeviceLinkSource
       lastSignals:
@@ -156791,6 +156825,33 @@ entities:
     components:
     - type: Transform
       pos: 73.5,-28.5
+      parent: 2
+- proto: VendingMachineCigs
+  entities:
+  - uid: 29618
+    components:
+    - type: Transform
+      pos: 11.5,-14.5
+      parent: 2
+  - uid: 29619
+    components:
+    - type: Transform
+      pos: 33.5,-26.5
+      parent: 2
+  - uid: 29620
+    components:
+    - type: Transform
+      pos: 73.5,-24.5
+      parent: 2
+  - uid: 29621
+    components:
+    - type: Transform
+      pos: -4.5,-22.5
+      parent: 2
+  - uid: 29622
+    components:
+    - type: Transform
+      pos: 7.5,-60.5
       parent: 2
 - proto: VendingMachineClothing
   entities:
@@ -188504,7 +188565,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -264088.1
+      secondsUntilStateChange: -264898.88
       state: Opening
     - type: Airlock
       autoClose: False
@@ -188741,7 +188802,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -29865.459
+      secondsUntilStateChange: -30676.238
       state: Opening
     - type: Airlock
       autoClose: False
