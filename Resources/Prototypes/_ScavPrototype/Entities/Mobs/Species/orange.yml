@@ -33,14 +33,15 @@
         sprite: Mobs/Effects/brute_damage.rsi
         color: "#FFCC00"
   - type: MeleeWeapon
+    attackRate: 2
     soundHit:
       path: /Audio/Weapons/pierce.ogg
     animation: WeaponArcClaw
     damage:
       types:
-        Piercing: 4
-        Slash: 5
-        Structural: 8
+        Piercing: 2
+        Slash: 3
+        Structural: 5
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -87,8 +88,8 @@
         Brute: -0.08
         Toxin: -0.05
   - type: Stamina
-    baseCritThreshold: 120
-    decay: 3.5
+    baseCritThreshold: 135
+    decay: 4
   - type: Hunger
     baseDecayRate: 0.046
     starvationDamage:

@@ -55,7 +55,7 @@
     butcheringType: Spike
     spawned:
     - id: FoodYellowMeat
-      amount: 5
+      amount: 6
   - type: DamageVisuals
     damageOverlayGroups:
       Brute:
@@ -73,17 +73,17 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      90: Critical
-      180: Dead
+      110: Critical
+      220: Dead
   - type: SlowOnDamage
     speedModifierThresholds:
-      60: 0.7
-      80: 0.5
+      80: 0.7
+      100: 0.5
   - type: Bloodstream
     bloodReferenceSolution:
       reagents:
       - ReagentId: YellowBlood
-        Quantity: 300
+        Quantity: 320
   - type: Damageable
     damageContainer: Biological
     damageModifierSet: Speciman
