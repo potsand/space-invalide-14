@@ -103,7 +103,7 @@ public sealed class HungerSystem : EntitySystem
     /// <param name="component"></param>
     public void SetHunger(EntityUid uid, float amount, HungerComponent? component = null)
     {
-        if (!/(uid, ref component))
+        if (!Resolve(uid, ref component))
             return;
 
         SetAuthoritativeHungerValue((uid, component), amount);
