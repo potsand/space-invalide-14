@@ -181,7 +181,7 @@
   - type: Action
     useDelay: 25
     icon:
-      sprite: _ScavPrototype/Mobs/Species/Dune/bite_action.rsi
+      sprite: _ScavPrototype/Mobs/Species/Milky/vomit_action.rsi
       state: icon
   - type: InstantAction
     event: !type:VomitActionEvent
